@@ -8,9 +8,14 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
             <Global
                 styles={css`
+                    @import url('//fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
                     ${emotionReset}
                     body {
-                        background-color: #212529;
+                        font-family: 'Inconsolata', monospace;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: bold;
                     }
                 `}
             />
