@@ -3,7 +3,7 @@ import { posters as postersData } from './data'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const GigPosterList = ({ posters }: { posters: typeof postersData }) => {
+const EventList = ({ posters }: { posters: typeof postersData }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mx-10 gap-4">
       {posters.map((poster, index) => (
@@ -32,4 +32,4 @@ const GigPosterList = ({ posters }: { posters: typeof postersData }) => {
   )
 }
 
-export default GigPosterList
+export default EventList
