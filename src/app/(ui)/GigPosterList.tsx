@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 const GigPosterList = ({ posters }: { posters: typeof postersData }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mx-10 gap-4">
       {posters.map((poster, index) => (
         <div
           key={index}
-          className="bg-white rounded-lg shadow-md overflow-hidden"
+          className="bg-white dark:bg-slate-600 rounded-lg shadow-md overflow-hidden"
         >
           <Image
             src={poster.image}
@@ -18,9 +18,11 @@ const GigPosterList = ({ posters }: { posters: typeof postersData }) => {
             height={300}
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold">{poster.title}</h2>
-            <p className="text-gray-600">{poster.date}</p>
-            <p className="text-gray-600">{poster.venue}</p>
+            <h2 className="text-xl font-semibold dark:text-white">
+              {poster.title}
+            </h2>
+            <p className="text-gray-600 dark:text-white">{poster.date}</p>
+            <p className="text-gray-600 dark:text-white">{poster.venue}</p>
           </div>
         </div>
       ))}
