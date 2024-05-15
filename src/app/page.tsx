@@ -1,3 +1,6 @@
+import GigPosterList from './(ui)/GigPosterList'
+import { posters } from './(ui)/data'
+
 export default function Home() {
-  return null
+  return <GigPosterList posters={posters} />
 }
