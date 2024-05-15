@@ -10,7 +10,7 @@ const EventList = ({ posters }: { posters: typeof postersData }) => {
         <Link
           key={index}
           className="bg-white dark:bg-slate-600 rounded-lg shadow-md overflow-hidden"
-          href={`/concert/${index}`}
+          href={`/event/${index}`}
         >
           <Image
             src={poster.image}
