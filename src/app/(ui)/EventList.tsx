@@ -1,14 +1,16 @@
 import React from 'react'
 import { posters as postersData } from './data'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const GigPosterList = ({ posters }: { posters: typeof postersData }) => {
+const EventList = ({ posters }: { posters: typeof postersData }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mx-10 gap-4">
       {posters.map((poster, index) => (
-        <div
+        <Link
           key={index}
           className="bg-white dark:bg-slate-600 rounded-lg shadow-md overflow-hidden"
+          href={`/event/${index}`}
         >
           <Image
             src={poster.image}
@@ -24,10 +26,10 @@ const GigPosterList = ({ posters }: { posters: typeof postersData }) => {
             <p className="text-gray-600 dark:text-white">{poster.date}</p>
             <p className="text-gray-600 dark:text-white">{poster.venue}</p>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   )
 }
 
-export default GigPosterList
+export default EventList

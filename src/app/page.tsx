@@ -1,6 +1,6 @@
-import GigPosterList from './(ui)/GigPosterList'
+import EventList from './(ui)/EventList'
 import { posters } from './(ui)/data'
 
 export default function Home() {
-  return <GigPosterList posters={posters} />
+  return <EventList posters={posters} />
 }
