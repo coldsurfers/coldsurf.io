@@ -20,7 +20,11 @@ export default function EventDetailPage() {
             </div>
           </div>
           <div className="ml-12" style={{ flex: '2 1 0%' }}>
-            <h1 className="text-5xl">Title</h1>
+            <h1 className="text-5xl">
+              Title Title Title Title Title Title Title Title Title Title Title
+              Title Title Title Title Title Title Title Title Title Title Title
+              Title Title Title Title Title Title Title Title Title Title
+            </h1>
           </div>
         </div>
       </div>
