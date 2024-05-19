@@ -9,6 +9,7 @@
     "deploy:prod": "vercel build --prod && vercel deploy --prebuilt --prod",
     "dev": "next dev",
     "lint": "next lint",
+    "lint:fix": "yarn lint --fix",
     "start": "next start",
     "prepare": "husky install"
   },
