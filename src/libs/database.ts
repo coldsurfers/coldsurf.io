@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@coldsurfers/prisma-schema'
 
 // for encode password for prisma postresql DATABASE_URL
 export function percentEncodeAllChars(plainPassword: string) {

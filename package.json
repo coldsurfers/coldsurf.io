@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "prisma generate",
+    "prebuild": "yarn prisma:generate",
     "build": "next build",
     "deploy:preview": "vercel build && vercel deploy --prebuilt",
     "deploy:prod": "vercel build --prod && vercel deploy --prebuilt --prod",
     "dev": "next dev",
     "lint": "next lint",
     "lint:fix": "yarn lint --fix",
-    "start": "next start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prisma:db-push": "yarn prisma db push --schema ./node_modules/@coldsurfers/prisma-schema/prisma/schema.prisma",
+    "prisma:generate": "yarn prisma generate --schema ./node_modules/@coldsurfers/prisma-schema/prisma/schema.prisma",
+    "start": "next start"
   },
   "dependencies": {
+    "@coldsurfers/prisma-schema": "^0.2.0",
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^3.3.4",
     "@prisma/client": "5.8.0",

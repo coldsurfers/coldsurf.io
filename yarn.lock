@@ -232,6 +232,11 @@
     "@babel/helper-validator-identifier" "^7.24.5"
     to-fast-properties "^2.0.0"
 
+"@coldsurfers/prisma-schema@^0.2.0":
+  version "0.2.0"
+  resolved "https://npm.pkg.github.com/download/@coldsurfers/prisma-schema/0.2.0/4bd360c2802ada39a0ba5ffc48c0bf3df3d3f2c7#4bd360c2802ada39a0ba5ffc48c0bf3df3d3f2c7"
+  integrity sha512-mO4gWf+xrTdTPOwDWFTk73sZKHmJzByJQYw/GoCH25vxzEORD6y3ejtZvJ0aOgCWdjqc9gAKEqmKjnWhlYOIqQ==
+
 "@csstools/cascade-layer-name-parser@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@csstools/cascade-layer-name-parser/-/cascade-layer-name-parser-1.0.11.tgz#c9b85dc38240c0269385f557149f714e7875fda0"
