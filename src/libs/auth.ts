@@ -206,6 +206,9 @@ export const config = {
     //   //   if (pathname === '/middleware-example') return !!auth
     //   return true
     // },
+    jwt: (params) => {
+      return params.token
+    },
     async signIn(params) {
       const { account, profile, credentials } = params
       log(`libs-auth.ts - signIn, ${JSON.stringify(params)}`)
@@ -273,6 +276,10 @@ export const config = {
     redirect: (params) => {
       return '/'
     },
+  },
+  session: {
+    strategy: 'jwt',
+    maxAge: 30 * 24 * 60 * 60, // 30 days
   },
 } satisfies NextAuthConfig
 
