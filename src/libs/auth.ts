@@ -69,7 +69,7 @@ import AuthSignInService from '../database/services/auth/signIn'
 import AuthSocialService from '@/database/services/auth/social'
 import log from './log'
 import AuthSignUpService from '@/database/services/auth/signUp'
-import { CredentialsSchema } from './types'
+import { CredentialsSchema } from '@coldsurfers/zod-schema'
 
 export const config = {
   theme: {
