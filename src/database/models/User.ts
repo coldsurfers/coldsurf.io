@@ -1,5 +1,5 @@
 import { prismaClient } from '@/libs/database'
-import { CredentialsProviderSchema } from '@/libs/types'
+import { CredentialsProviderSchema } from '@coldsurfers/zod-schema'
 import { User } from '@prisma/client'
 import { z } from 'zod'
 

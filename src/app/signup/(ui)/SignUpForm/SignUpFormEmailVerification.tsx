@@ -5,10 +5,8 @@ import { useEffectOnce } from 'react-use'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useCallback, useRef, useState } from 'react'
 import { match } from 'ts-pattern'
-import {
-  CredentialsEmailVerificationCodeSchema,
-  ResultReturnType,
-} from '@/libs/types'
+import { CredentialsEmailVerificationCodeSchema } from '@coldsurfers/zod-schema'
+import { ResultReturnType } from '@/libs/types'
 import httpRequest from '@/libs/httpRequest'
 import { ApiPostAuthVerificationErrorCode } from '@/app/api/auth/verification/types'
 import TextInput from '@/ui/TextInput/TextInput'

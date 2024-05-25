@@ -6,7 +6,7 @@ import { z } from 'zod'
 import { ErrorMessage } from '@hookform/error-message'
 import FormError from '@/ui/Forms/FormError'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { CredentialsEmailSchema } from '@/libs/types'
+import { CredentialsEmailSchema } from '@coldsurfers/zod-schema'
 
 const InputsSchema = z.object({
   email: CredentialsEmailSchema,

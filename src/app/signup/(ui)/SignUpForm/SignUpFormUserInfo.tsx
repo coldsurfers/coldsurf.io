@@ -1,4 +1,4 @@
-import { CredentialsUsernameSchema } from '@/libs/types'
+import { CredentialsUsernameSchema } from '@coldsurfers/zod-schema'
 import BottomCTAFormLayout from '@/ui/Forms/BottomCTAFormLayout'
 import FormError from '@/ui/Forms/FormError'
 import TextInput from '@/ui/TextInput/TextInput'
